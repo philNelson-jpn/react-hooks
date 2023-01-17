@@ -56,14 +56,18 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.state-wrapper{
+.hook-wrapper{
   outline: 2px solid white;
-  padding: 40px;
+  padding: 20px;
+  height: 200px;
+  width: 400px;
+  margin-inline: 16px;
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 
 .state-increment-button{
   margin-left: 20px;
