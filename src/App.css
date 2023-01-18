@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  --hover-outline: hsl(237, 100%, 70%);
 }
 
 .grid-wrapper {
@@ -19,6 +20,70 @@
   margin-bottom: -10px;
   margin-top: 16px;
 }
+
+
+button {
+  border-radius: 8px;
+  border: 2px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: var(--hover-outline);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.hook-wrapper{
+  outline: 2px solid white;
+  padding: 20px;
+  height: 150px;
+  margin-inline: 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: outline-color 250ms ease-in-out;
+}
+
+.effect-hook:hover {
+  outline-color: var(--hover-outline);
+}
+
+.state-increment-button{
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.state-decrement-button{
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.state-span{
+  font-size: 3rem;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
 
 button:disabled {
   cursor: not-allowed;
@@ -58,7 +123,12 @@ textarea:disabled {
   flex-direction: column;
 }
 
-.italic{
-  color: rgb(255, 52, 52);
+.italic-hovered{
+  color: var(--hover-outline);
+  font-style: italic;
+}
+
+.italic-not-hovered{
+  color: hsl(0, 100%, 59%);
   font-style: italic;
 }

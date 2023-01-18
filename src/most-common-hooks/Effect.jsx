@@ -6,7 +6,7 @@ export default function Effect(){
     return (
         <div>
             <h2>useEffect</h2>
-            <div className="hook-wrapper" ref={ref}>
+            <div className="hook-wrapper effect-hook" ref={ref}>
                 {hovered ? <h1>Hovering</h1> : <h1>Not hovering</h1>}
             </div>
         </div>
