@@ -132,3 +132,33 @@ textarea:disabled {
   color: hsl(0, 100%, 59%);
   font-style: italic;
 }
+
+.effect-hook {
+	box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+		2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
+		inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+		inset 2px 2px 10px #00000080;
+}
+.effect-hook {
+	transition: box-shadow 300ms ease-in-out;
+}
+
+@keyframes animate {
+	from {
+		filter: hue-rotate(0deg);
+	}
+	to {
+		filter: hue-rotate(360deg);
+	}
+}
+
+.effect-hook:hover {
+	/* outline: rgba(243, 243, 252, 70%) 0.05em solid; */
+	animation: animate 3s linear infinite;
+	text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+		0 0 200px #0072ff;
+	box-shadow: 2px 2px 2px #8f8d8d80, 10px 1px 12px #8f8d8d80,
+		2px 2px 10px #8f8d8d80, 2px 2px 3px #8f8d8d80, inset 2px 2px 10px #8f8d8d80,
+		inset 2px 2px 10px #8f8d8d80, inset 2px 2px 10px #8f8d8d80,
+		inset 2px 2px 10px #8f8d8d80;
+}
