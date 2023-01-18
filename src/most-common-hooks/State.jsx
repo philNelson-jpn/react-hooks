@@ -3,7 +3,6 @@ import {Context} from './Context'
 
 export default function State(){
     const {count, increment, decrement} = useContext(Context)
-    console.log(count)
     return (
         <div>
             <h2>useState</h2>

@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import State from './most-common-hooks/State'
 import Effect from './most-common-hooks/Effect'
+import WordCountGame from './WordCountGame'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <State />
         <Effect />
       </div>
+        <WordCountGame />
     </>
   )
 }

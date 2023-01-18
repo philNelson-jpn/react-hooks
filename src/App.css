@@ -11,3 +11,36 @@
   gap: 16px;
   grid-template-columns: repeat(auto-fill, minmax(var(--min-column-width), 1fr));
 }
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+textarea {
+  border: 3px solid black;
+  width: 90%;
+  margin: 0 auto;
+  outline: none;
+  height: 200px;
+  background: #5d5c69;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+textarea:disabled {
+  background-color: #a5a2a2;
+  color: black;
+}
+
+.control-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.word-game-wrapper{
+  outline: 2px solid white;
+  padding: 20px;
+  margin: 16px;
+  border-radius: 8px;
+}

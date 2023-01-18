@@ -63,6 +63,9 @@ button:focus-visible {
   justify-content: center;
 }
 
+.hook-wrapper:hover {
+  outline-color: #646cff;
+}
 
 .state-increment-button{
   margin-left: 20px;
