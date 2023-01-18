@@ -12,6 +12,14 @@
   grid-template-columns: repeat(auto-fill, minmax(var(--min-column-width), 1fr));
 }
 
+.title-wrapper {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  margin-bottom: -10px;
+  margin-top: 16px;
+}
+
 button:disabled {
   cursor: not-allowed;
 }
@@ -43,4 +51,14 @@ textarea:disabled {
   padding: 20px;
   margin: 16px;
   border-radius: 8px;
+}
+
+.multi-line {
+  display: flex;
+  flex-direction: column;
+}
+
+.italic{
+  color: rgb(255, 52, 52);
+  font-style: italic;
 }

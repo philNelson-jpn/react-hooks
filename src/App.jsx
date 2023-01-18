@@ -4,6 +4,7 @@ import './App.css'
 import State from './most-common-hooks/State'
 import Effect from './most-common-hooks/Effect'
 import WordCountGame from './WordCountGame'
+import UseContextComponent from './most-common-hooks/UseContextComponent'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <div className='grid-wrapper'>
         <State />
         <Effect />
+        <UseContextComponent />
       </div>
         <WordCountGame />
     </>

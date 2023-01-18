@@ -1,7 +1,8 @@
-import React, {useState, useEffect, useRef} from "react"
+import React, {useState, useEffect, useRef, useContext} from "react"
 import useWordGame from "./custom-hooks/useWordGame"
 
 function WordCountGame() {
+
     const {
         textBoxRef, 
         handleChange, 
@@ -10,12 +11,18 @@ function WordCountGame() {
         timeRemaining, 
         startGame, 
         wordCount
-    } = useWordGame(5)
+    } = useWordGame(10)
     
     return (
         <>
-            <h2>Typing Game</h2>
+            <div className="title-wrapper">
+                <h2>useState</h2>
+                <h2>useEffect</h2>
+                <h2>useContext</h2>
+                <h2>useRef</h2>
+            </div>
             <div className="word-game-wrapper">
+                <h2>Typing Game</h2>
                 <textarea
                     ref={textBoxRef}
                     onChange={handleChange}
@@ -28,7 +35,7 @@ function WordCountGame() {
                         onClick={startGame}
                         disabled={isTimeRunning}
                     >
-                        Start
+                        {timeRemaining === 0 || isTimeRunning ? "Try again" : "Start"}
                     </button>
                     <h3>Word count: {wordCount}</h3>
                 </div>
