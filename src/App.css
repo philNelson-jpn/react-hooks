@@ -6,6 +6,12 @@
   --hover-outline: hsl(237, 100%, 70%);
 }
 
+::selection {
+  color: hsl(0, 0%, 14%);
+  background-color: hsl(0, 9%, 94%);
+  padding: 20px;
+}
+
 .grid-wrapper {
   --min-column-width: min(400px, 100%);
   display: grid;

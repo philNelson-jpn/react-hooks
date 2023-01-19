@@ -24,6 +24,7 @@ function WordCountGame() {
             <div className="word-game-wrapper">
                 <h2>Typing Game</h2>
                 <textarea
+                    className="word-game-textarea"
                     ref={textBoxRef}
                     onChange={handleChange}
                     value={text}
