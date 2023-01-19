@@ -12,26 +12,6 @@ function WordCountGame() {
         startGame, 
         wordCount
     } = useWordGame(10)
-
-    const hoverStyles = {
-        outline: "4px solid hsl(120, 100%, 72%)",
-        borderRadius: "4px"
-    }
-
-    const removeStyles = {
-        outline: "",
-        borderRadius: ""
-    }
-
-    function refSelect(){
-        document.getElementById("textarea").style.outline = hoverStyles.outline
-        document.getElementById("textarea").style.borderRadius = hoverStyles.borderRadius
-    }
-
-    function refDeSelect(){
-        document.getElementById("textarea").style.outline = removeStyles.outline
-        document.getElementById("textarea").style.borderRadius = removeStyles.borderRadius
-    }
     
     return (
         <>
@@ -39,12 +19,11 @@ function WordCountGame() {
                 <h2>useState</h2>
                 <h2>useEffect</h2>
                 <h2>useContext</h2>
-                <h2 onMouseEnter={refSelect} onMouseLeave={refDeSelect}>useRef</h2>
+                <h2>useRef</h2>
             </div>
             <div className="word-game-wrapper">
                 <h2>Typing Game</h2>
                 <textarea
-                    id="textarea"
                     ref={textBoxRef}
                     onChange={handleChange}
                     value={text}
