@@ -20,10 +20,15 @@
     position: relative;
     display: grid;
     place-content: center;
-    padding: 32px;
+    padding: 16px 32px 64px;
     margin: 32px 16px;
     border: solid 2px white;
     border-radius: 8px;
+}
+
+.relax {
+    color: white;
+    font-size: 2rem;
 }
 
 .flag {
@@ -37,13 +42,13 @@
 
 .box {
 	position: absolute;
-	inset: 5px 0px;
+	inset: 132px 0px;
 	z-index: 0;
 	width: 400px;
 	height: 320px;
 	background: linear-gradient(180deg, hsl(230deg 80% 53%), hsl(30deg 80% 80%));
 	border-radius: 8px;
-    margin: 32px auto;
+    margin: -12px auto;
 }
 
 .column {

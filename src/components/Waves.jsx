@@ -19,6 +19,7 @@ function Waves({
 
 	return (
 		<div className={styles.wrapper}>
+            <h3 className={styles.relax}>Relax</h3>
 			<div className={styles.flag} style={{ width: friendlyWidth }}>
 				{range(numOfColumns).map((columnIndex) => (
 					<div
