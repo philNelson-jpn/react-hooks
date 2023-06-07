@@ -1,0 +1,31 @@
+export const COLORS = {
+	rainbow: [
+		'hsl(230deg 80% 58%)',
+		'hsl(220deg 80% 56%)',
+		'hsl(210deg 80% 52%)',
+		'hsl(230deg 80% 62%)',
+		'hsl(220deg 80% 60%)',
+		'hsl(210deg 80% 58%)',
+		'hsl(230deg 80% 68% / .8)',
+		'hsl(220deg 80% 64% / .7)',
+		'hsl(230deg 80% 68% / .5)',
+		'hsl(220deg 80% 64% / .3)',
+		'hsl(210deg 80% 88%)',
+	],
+	'rainbow-original': [
+		'hsl(0deg 90% 55%)',
+		'hsl(30deg 95% 65%)',
+		'hsl(55deg 90% 65%)',
+		'hsl(100deg 65% 45%)',
+		'hsl(220deg 80% 55%)',
+		'hsl(265deg 80% 50%)',
+	],
+	trans: [
+		'hsl(200deg 85% 70%)',
+		'hsl(350deg 85% 85%)',
+		'hsl(0deg 0% 100%)',
+		'hsl(350deg 85% 85%)',
+		'hsl(200deg 85% 70%)',
+	],
+	pan: ['hsl(331deg 100% 55%)', 'hsl(50deg 100% 50%)', 'hsl(200deg 100% 55%)'],
+}

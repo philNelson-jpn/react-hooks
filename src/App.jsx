@@ -5,6 +5,7 @@ import State from './most-common-hooks/State'
 import Effect from './most-common-hooks/Effect'
 import WordCountGame from './WordCountGame'
 import UseContextComponent from './most-common-hooks/UseContextComponent'
+import Waves from './components/Waves'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <UseContextComponent />
       </div>
         <WordCountGame />
+        <Waves />
     </>
   )
 }

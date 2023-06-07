@@ -1,0 +1,62 @@
+@keyframes oscillate {
+	from {
+		transform: translateY(8px);
+	}
+	to {
+		transform: translateY(-8px);
+	}
+}
+
+/* @keyframes oscillate {
+    from {
+      transform: translateY(var(--billow));
+    }
+    to {
+      transform: translateY(calc(var(--billow) * -1));
+    }
+  } */
+
+.wrapper {
+    position: relative;
+    display: grid;
+    place-content: center;
+    padding: 32px;
+    margin: 32px 16px;
+    border: solid 2px white;
+    border-radius: 8px;
+}
+
+.flag {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	aspect-ratio: 3 / 2;
+	animation-duration: 1600ms;
+    margin: 32px;
+}
+
+.box {
+	position: absolute;
+	inset: 5px 0px;
+	z-index: 0;
+	width: 400px;
+	height: 320px;
+	background: linear-gradient(180deg, hsl(230deg 80% 53%), hsl(30deg 80% 80%));
+	border-radius: 8px;
+    margin: 32px auto;
+}
+
+.column {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	animation: oscillate 800ms alternate infinite ease-in-out both;
+}
+.column:first-child {
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+.column:last-child {
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
